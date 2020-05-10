@@ -1,8 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  // Uncomment useState line below to get 'App Rendered' Logged once
+  const [count, setCount] = useState(0);
+  console.log("App Rendered");
+
   return (
     <div className="App">
       <header className="App-header">
